@@ -27,7 +27,7 @@
       <ion-col size="12" size-sm="8" offset-sm="2" class="ion-text-center">
         <ion-list>
           <ion-item *ngFor="let place of loadedPlaces.slice(1)"
-          [routerLink]="['/', 'places', 'tabs', 'discover', place.id]">
+          [routerLink]="['/', 'places', 'tabs', 'discover', place.id]" detail>
             <ion-thumbnail slot="start">
               <ion-img [src]="place.imageUlr"></ion-img>
             </ion-thumbnail>
